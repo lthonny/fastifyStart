@@ -1,4 +1,4 @@
-import { ITask } from './../@types/interfaces';
+import { ITask } from '../interfaces/task';
 
 const tasks: ITask[] = [
     { id: 1, title: 'Item 1', description: 'Item description', status: true },
@@ -32,4 +32,4 @@ class TaskController {
     }
 }
 
-module.exports = new TaskController();
+export default new TaskController();
